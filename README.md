@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# CryptoBuddy - AI Cryptocurrency Advisor
 
-## Project info
+A rule-based chatbot that analyzes cryptocurrency data and provides investment advice based on profitability and sustainability.
 
-**URL**: https://lovable.dev/projects/2641a79f-0246-4cf7-82e4-98fb2fb25e04
+## Features
 
-## How can I edit this code?
+- 🤖 Interactive chat interface (CLI and Web)
+- 📊 Cryptocurrency data analysis
+- 🌱 Sustainability scoring
+- 📈 Price trend analysis
+- 💡 Investment recommendations
 
-There are several ways of editing your application.
+## What You'll Learn
 
-**Use Lovable**
+- Basics of AI-driven decision-making
+- How to design conversational logic
+- Simple data analysis for crypto trends
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2641a79f-0246-4cf7-82e4-98fb2fb25e04) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Python 3.8 or higher
+- pip (Python package installer)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd crypto
 ```
 
-**Edit a file directly in GitHub**
+2. Create a virtual environment (recommended):
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-**Use GitHub Codespaces**
+### Running the Application
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+#### Command Line Interface (CLI)
+```bash
+python chatbot.py
+```
 
-## What technologies are used for this project?
+#### Web Interface
+```bash
+python app.py
+```
+Then open your browser and visit `http://localhost:5000`
 
-This project is built with:
+## How to Use
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Start the application (CLI or Web)
+2. Type your questions about cryptocurrencies
+3. Get instant advice about:
+   - Trending cryptocurrencies
+   - Sustainable coin options
+   - Long-term investment recommendations
 
-## How can I deploy this project?
+## Sample Questions
 
-Simply open [Lovable](https://lovable.dev/projects/2641a79f-0246-4cf7-82e4-98fb2fb25e04) and click on Share -> Publish.
+- "Which crypto is trending up?"
+- "What's the most sustainable coin?"
+- "What should I invest in for long-term growth?"
 
-## Can I connect a custom domain to my Lovable project?
+## Project Structure
 
-Yes, you can!
+```
+crypto/
+├── app.py              # Flask web application
+├── chatbot.py          # Main chatbot logic
+├── crypto_data.py      # Cryptocurrency database
+├── requirements.txt    # Python dependencies
+└── templates/          # HTML templates
+    └── index.html      # Web interface
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Disclaimer
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+⚠️ This is a demo project for educational purposes. Cryptocurrency investments are risky—always do your own research before making investment decisions.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
